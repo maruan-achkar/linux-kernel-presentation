@@ -49,6 +49,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 1.5vw;
 }
 .bottomdiv{
     margin: auto;
@@ -77,4 +78,13 @@ body{
 }
 .fonte:hover{
     color: rgb(46, 46, 255);
+}
+.qrcode{
+    width: 20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vw;
+    margin-bottom: -3vw;
+    border-radius: 2vw;
 }
