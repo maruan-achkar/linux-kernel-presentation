@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RASPBERRY PI OS | LINUX KERNEL</title>
+    <link href="logo.png" rel="icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="topdiv">
+        <img class="logo" src="logo.png">
+        <h1 class="title">Raspberry PI OS | Linux Kernel | RAM</h1>
+        <p class="desc">O Raspberry PI OS foi criado e otimizado para o minicomputador Raspberry PI. Tem sua base em Linux.</p>
+        <a class="fonte" href="https://www.kernel.org/doc/html/latest/admin-guide/mm/concepts.html#huge-pages" target="_blank">Fonte: The Linux Kernel user's and administrator's guide.</a>
+    </div>
+    <div class="middiv">
+        <img src="linux-memory-management1.png" class="graph">
+    </div>
+    <div class="bottomdiv">
+        <h1 class="conceptstitle">Huge Pages</h1>
+        <p class="conceptsdesc">Huge pages sao aplicativos que ulitizam mais que o 4KB de memoria. O kernel utiliza a CPU para ajudar com a administracao dessas aplicacoes.</p>
+        
+        <h1 class="conceptstitle">Virtual Memory Primer</h1>
+        <p class="conceptsdesc">O Virtual Memory Primer e essencial para computadores mordernos, pois virtualiza os enderecos de memorias, isso e necessario pois todos os computadores tem um limite de quanta memoria pode ser instalada, alem das implicacoes financeiras de instalar grandes quantidades dela. Esse sistema ira "transformar" a memoria fisica em memoria virtual, linkando as duas para facil acesso e comunicacao.</p>
+        
+        <h1 class="conceptstitle">Zones</h1>
+        <p class="conceptsdesc">O kernel Linux cria zonas para ajudar a organizar sua memoria, ele junta aplicacoes semelhantes na mesma zona de memoria para faciliar o acesso.</p>
+        
+        <h1 class="conceptstitle">Page Cache</h1>
+        <p class="conceptsdesc">Page cache, tambem conhecido como Cache, e um local onde arquivos recentemente usados ficam, facilitando e acelerando o acesso. Quando voce edita um arquivo de texto por exemplo, ele armazena as edicoes no Cache primeiro, e depois envia para a memoria defitiva no HDD ou SSD, isso acelera bastante o processo inteiro.</p>
+        
+        <h1 class="conceptstitle">Nodes</h1>
+        <p class="conceptsdesc">Nodes sao bancos de zonas, tipo grupos. Eles serao mais rapidos ou lentos dependendo do quao "longes" estao do processador. Cada node tem seu proprio subsistema dedicado de memoria. </p>
+        
+        <h1 class="conceptstitle">Anonymous Memory</h1>
+        <p class="conceptsdesc">Memorias anonimas sao memorias reservadas para uso mais especifico dos aplitivos.</p>
+        
+        <h1 class="conceptstitle">OOM Killer</h1>
+        <p class="conceptsdesc">O OOM Killer, como o nome sugere, "mata" um espaco de memoria caso aquele apresente problemas graves de desempenho e possa comprometer o funcionamento geral da memoria.</p>
+       
+        <h1 class="conceptstitle">Compaction</h1>
+        <p class="conceptsdesc">Esse e o processo de desfragmentar a memoria, conforme o computador e usado, arquivos sao criados e deletados, deixando a memoria fragmentada, o sistema de Compactation ira desfragmentar a memoria. Funciona de forma parecida com o Reclaim.</p>
+       
+        <h1 class="conceptstitle">Reclaim</h1>
+        <p class="conceptsdesc">Reclaim e o processo de deletar um arquivo, quando voce apaga algo no seu computador, o Reclaim e o responsavel por dizer ao computador que ele espaco de memoria esta livre e agora pode ser reescrito.</p>
+    </div>
+</body>
+</html>
